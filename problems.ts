@@ -15,3 +15,9 @@ function filterByRating(
 
   return filteredBooks;
 }
+
+function concatenateArrays<T>(...arrays: T[][]): T[] {
+  return arrays.flat();
+};
+
+
