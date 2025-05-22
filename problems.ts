@@ -69,3 +69,22 @@ function getMostExpensiveProduct(products: Product[]): Product | null {
 
   return products[0];
 }
+
+enum Day {
+  Monday,
+  Tuesday,
+  Wednesday,
+  Thursday,
+  Friday,
+  Saturday,
+  Sunday
+}
+
+function getDayType(day: Day): string {
+  if(day === 6) {
+    return "Weekend";
+  }
+
+  return "Weekdays";
+}
+
